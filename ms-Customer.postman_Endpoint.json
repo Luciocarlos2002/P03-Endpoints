@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "4fc6a0a2-8ff0-44cc-bc2e-369af18a53a8",
+		"name": "ms-Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19426929"
+	},
+	"item": [
+		{
+			"name": "ms-Customer-week03",
+			"item": [
+				{
+					"name": "ms-Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"Lucio Carlos Huaman Tirado\",\r\n    \"numberIdentity\": 70277538,\r\n    \"typeCustomer\": \"Personal\",\r\n    \"phoneNumber\": 982797247,\r\n    \"emailCustomer\": \"lucio@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Customer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer/getAllCustomers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"getAllCustomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/628806f4c0407834dbac65ce",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"628806f4c0407834dbac65ce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"Lucio Carlos Huaman Tirado\",\r\n    \"numberIdentity\": 70277538,\r\n    \"typeCustomer\": \"Empresa\",\r\n    \"phoneNumber\": 982797247,\r\n    \"emailCustomer\": \"lucio@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer/update/6293adf5e26ea42e74615e8c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"update",
+								"6293adf5e26ea42e74615e8c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/delete/6293adf5e26ea42e74615e8c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"delete",
+								"6293adf5e26ea42e74615e8c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

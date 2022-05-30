@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "7d149bae-201c-49e1-b485-97d59e6cf8d9",
+		"name": "ms-Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19426929"
+	},
+	"item": [
+		{
+			"name": "ms-Account-week03",
+			"item": [
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeAccount\":\"Cuenta Corriente\",\r\n    \"numberAccount\": 1899801234234,\r\n    \"keyAccount\": 7819,\r\n    \"availableBalanceAccount\": 3400.00,\r\n    \"idCustomer\":\"628060e14d7885490d08b698\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/account/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/account/allAccounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account",
+								"allAccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/account/628195711d40c21e90afae21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account",
+								"628195711d40c21e90afae21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"availableBalanceAccount\": 4400.00,\r\n    \"statusAccount\":\"Inactivo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/account/update/6293c4ce6486860545a4b415",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account",
+								"update",
+								"6293c4ce6486860545a4b415"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/account/delete/6293c4ce6486860545a4b415",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account",
+								"delete",
+								"6293c4ce6486860545a4b415"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

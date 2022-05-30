@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "51ddcf78-0534-4678-aac2-69bd0b0c24f1",
+		"name": "ms-Credit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19426929"
+	},
+	"item": [
+		{
+			"name": "ms-Credit-Week03",
+			"item": [
+				{
+					"name": "ms-Credit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerId\": \"62880863c0407834dbac65d0\",\r\n    \"issuerBank\": \"Interbank\",\r\n    \"typeCredit\": \"Clasica\",\r\n    \"dateDue\": \"12/2027\",\r\n    \"cardIssuer\": \"VISA\",\r\n    \"codeCVV\": 1390\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/credit/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Credit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/credit/allCredits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit",
+								"allCredits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Credit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/credit/62827c0064647c6144919b2e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit",
+								"62827c0064647c6144919b2e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
